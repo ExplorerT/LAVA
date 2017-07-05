@@ -1,0 +1,42 @@
+.site-footer {
+	position: relative;
+	//padding: 1em;
+	font-family: $font_montserrat;
+	font-weight: 100;
+	color: #fff;
+	background-color: #191d48;
+	border-bottom: 3px solid red;
+	text-align: center;
+	height: 120px;
+	font-size: 16px;
+	
+
+
+	
+	@media screen and (min-width: $query__small) {
+		padding: 1em 2em;
+	}
+
+}
+
+.footer-menu{
+	ul{
+		list-style-type: none;
+		display: flex;
+		justify-content: center;
+		margin: 0;
+
+		a{
+			display: block;
+			padding: .5em 1em;
+			color: white;
+			text-decoration: none;
+
+			&:hover,
+				&:focus{
+					text-decoration: underline;
+				}
+
+		}
+	}
+}
