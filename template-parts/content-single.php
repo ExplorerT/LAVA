@@ -56,7 +56,7 @@
 		comments_template();
 	endif;
 	?>
-</section>
+</section><!-- .post-content-->
 
 	<?php
 	get_sidebar();
