@@ -263,7 +263,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: #000;
 	font-family: "Roboto", Georgia, Cambria, sans-serif;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -523,15 +523,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #000;
 }
 
 a:visited {
-	color: purple;
+	color: #000;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #b51c35;
 }
 
 a:focus {
@@ -584,7 +584,7 @@ a:hover, a:active {
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
-	color: #21759b;
+	color: #000;
 	display: block;
 	font-size: 17.5px;
 	font-size: 1.09375rem;
