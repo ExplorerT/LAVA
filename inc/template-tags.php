@@ -128,3 +128,17 @@ function lava_category_transient_flusher() {
 }
 add_action( 'edit_category', 'lava_category_transient_flusher' );
 add_action( 'save_post',     'lava_category_transient_flusher' );
+
+/**
+ * Post navigation (previous / next post) for single posts.
+ */
+function lava_post_navigation() {
+	the_post_navigation( array(
+		'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'lava' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Next post:', 'lava' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+		'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'lava' ) . '</span> ' .
+			'<span class="screen-reader-text">' . __( 'Previous post:', 'lava' ) . '</span> ' .
+			'<span class="post-title">%title</span>',
+	) );
+}
