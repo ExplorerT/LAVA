@@ -19,7 +19,7 @@
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 
-		if ( 'post' === get_post_type() ) : ?>
+		if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<div class="entry-meta">
 			<?php lava_posted_on(); ?>
 		</div><!-- .entry-meta -->
@@ -29,33 +29,49 @@
 
 	<section class="post-content">
 
-	<div class="entry-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'lava' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
+		if ( !is_active_sidebar( 'sidebar-1' ) ) : ?>
+		<div class="post_content__wrap">
+		<div class="entry-meta">
+			<?php lava_posted_on(); ?>
+		</div><!-- .entry-meta -->
+		<div class="post-content__body">
+		<?php
+		endif; ?>
 
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lava' ),
-				'after'  => '</div>',
-			) );
+		<div class="entry-content">
+			<?php
+				the_content( sprintf(
+					/* translators: %s: Name of current post. */
+					wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'lava' ), array( 'span' => array( 'class' => array() ) ) ),
+					the_title( '<span class="screen-reader-text">"', '"</span>', false )
+				) );
+
+				wp_link_pages( array(
+					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'lava' ),
+					'after'  => '</div>',
+				) );
+			?>
+		</div><!-- .entry-content -->
+
+		<footer class="entry-footer">
+			<?php lava_entry_footer(); ?>
+		</footer><!-- .entry-footer -->
+
+		<?php
+		if ( !is_active_sidebar( 'sidebar-1') ) : ?>
+		</div><!-- .post-content__body -->
+		</div><!-- .post-content__wrap -->
+		<?php endif; ?>
+		
+		<?php
+		lava_post_navigation();
+
+		// If comments are open or we have at least one comment, load up the comment template.
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
 		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php lava_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
-	<?php
-	lava_post_navigation();
-
-	// If comments are open or we have at least one comment, load up the comment template.
-	if ( comments_open() || get_comments_number() ) :
-		comments_template();
-	endif;
-	?>
 </section><!-- .post-content-->
 
 	<?php
