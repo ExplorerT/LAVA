@@ -30,12 +30,27 @@
 	}
 }
 
-/*
+.index-image {
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	a {
+		&:focus > img,
+		&:hover > img {
+			opacity: 0.8;
+		}
+	}
+}
+
+
+
 .continue-reading {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-family: $font__sans;
+	font-family: $font_montserrat;
 
 	a {
 		display: block;
@@ -52,4 +67,3 @@
 	}
 
 }
-*/
