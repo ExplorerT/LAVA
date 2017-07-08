@@ -13,6 +13,9 @@
 
 	</div><!-- #content -->
 
+	<?php get_sidebar( 'footer' ); ?>
+
+
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<nav class="footer-menu">
 		<?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>

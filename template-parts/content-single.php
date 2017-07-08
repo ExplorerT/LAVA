@@ -27,6 +27,15 @@
 		endif; ?>
 	</header><!-- .entry-header -->
 
+	<?php
+	if (has_post_thumbnail() ) { ?>
+	<figure class="featured-image full-bleed">
+	<?php
+	the_post_thumbnail('lava-full-bleed');
+	?>
+	</figure><!-- .featured-image full-bleed-->
+	<?php } ?>
+
 	<section class="post-content">
 
 		<?php
@@ -63,7 +72,7 @@
 		</div><!-- .post-content__body -->
 		</div><!-- .post-content__wrap -->
 		<?php endif; ?>
-		
+
 		<?php
 		lava_post_navigation();
 
