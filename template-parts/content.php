@@ -16,7 +16,7 @@
 	 <figure class="featured-image index-image">
 		 <a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark">
 			 <?php
-			 the_post_thumbnail();
+			 the_post_thumbnail('lava-index-img');
 			 ?>
 		 </a>
 	 </figure><!-- .featured-image full-bleed-->
