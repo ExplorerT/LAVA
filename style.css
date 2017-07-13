@@ -899,29 +899,36 @@ a:hover, a:active {
 	}
 }
 
-/*
+.index-image img {
+	display: block;
+	margin: 0 auto;
+}
+
+.index-image a:focus > img,
+.index-image a:hover > img {
+	opacity: 0.8;
+}
+
 .continue-reading {
 	position: absolute;
 	right: 0;
 	bottom: 0;
-	font-family: $font__sans;
-
-	a {
-		display: block;
-		padding: .5em 1em;
-		font-size: 90%;
-		text-decoration: none;
-		background: hsl(0, 0%, 85%);
-
-		&:focus,
-		&:hover {
-			color: white;
-			background: $color__interactive;
-		}
-	}
-
+	font-family: "Montserrat", "Lucida Grande" sans-serif;
 }
-*/
+
+.continue-reading a {
+	display: block;
+	padding: .5em 1em;
+	font-size: 90%;
+	text-decoration: none;
+	background: #d9d9d9;
+}
+
+.continue-reading a:focus, .continue-reading a:hover {
+	color: white;
+	background: #b51c35;
+}
+
 /*--------------------------------------------------------------
 ## Header
 --------------------------------------------------------------*/
