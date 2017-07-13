@@ -37,7 +37,11 @@ if ( have_posts() ) : ?>
 
 			endwhile;
 
-			the_posts_navigation();
+			the_posts_pagination( array(
+ 				'prev_text' => __( 'Newer', 'lava' ),
+ 				'next_text' => __( 'Older', 'lava' ),
+ 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'lava' ) . '</span>',
+ 			));
 
 		else :
 
