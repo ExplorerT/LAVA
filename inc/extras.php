@@ -32,6 +32,10 @@ function lava_body_classes( $classes ) {
 		$classes[] = 'no-sidebar';
 	}
 
+	// Add a class telling us if the sidebar is in use.
+	if ( is_active_sidebar( 'sidebar-2' ) ) {
+		$classes[] = 'has-page-sidebar';
+	}
 
 	return $classes;
 }
