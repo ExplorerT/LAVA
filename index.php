@@ -41,20 +41,24 @@
  			endwhile;
 
  			the_posts_pagination( array(
- 				'prev_text' => __( 'Newer', 'lava' ),
- 				'next_text' => __( 'Older', 'lava' ),
- 				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'lava' ) . '</span>',
- 			));
+				'prev_text' => lava_get_svg( array( 'icon' => 'arrow-left' ) ) . __( 'Newer', 'lava' ),
+				'next_text' => __( 'Older', 'lava' ) . lava_get_svg( array( 'icon' => 'arrow-right' ) ),
+				'before_page_number' => '<span class="screen-reader-text">' . __( 'Page ', 'lava' ) . '</span>',
+			));
 
- 		else :
+		?>
 
- 			get_template_part( 'template-parts/content', 'none' );
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
- 		endif; ?>
+<?php
+get_sidebar();
+get_footer();
 
- 		</main><!-- #main -->
- 	</div><!-- #primary -->
 
- <?php
- get_sidebar();
- get_footer();
+else :
+
+	get_template_part( 'template-parts/content', 'none' );
+	return;
+
+endif;

@@ -320,3 +320,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Load SVG icon funcions.
+ */
+require get_template_directory() . '/inc/icon-functions.php';
+
