@@ -82,6 +82,9 @@ function lava_setup() {
 		'height' => 90,
 		'flex-width' => true,
 		));
+
+	/* Editor Style */
+	add_editor_style( array( 'inc/editor-styles.css', lava_fonts_url() ) );
 }
 endif;
 add_action( 'after_setup_theme', 'lava_setup' );
