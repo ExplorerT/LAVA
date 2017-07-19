@@ -14,6 +14,10 @@
 SVG Fallbacks
 --------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+SVG Fallbacks
+--------------------------------------------------------------*/
+
 .svg-fallback {
 	display: none;
 }
@@ -21,6 +25,21 @@ SVG Fallbacks
 .no-svg .svg-fallback {
 	display: inline-block;
 }
+
+.no-svg .nav-links .svg-fallback {
+	padding: 0 .5em;
+	color: inherit;
+	background: inherit;
+}
+
+.no-svg .svg-fallback.icon-arrow-long-left:before {
+	content: "←";
+}
+
+.no-svg .svg-fallback.icon-arrow-long-right:before {
+	content: "→";
+}
+
 
 /* Social Menu fallbacks */
 
