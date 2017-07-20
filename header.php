@@ -61,6 +61,7 @@
 <?php endif; ?>
 
 <!-- header content -->
+<!--
 <?php if (is_front_page()) : ?>
 <div class="main-header-content">
     	<h1> Welcome to lava!</h1>
@@ -78,7 +79,7 @@
     			
     		</ul>
             
-</div>
+</div> -->
 <!--header content
 
 <?php endif; ?>
