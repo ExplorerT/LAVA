@@ -265,7 +265,7 @@ input,
 select,
 textarea {
 	color: #000;
-	font-family: "Roboto", Georgia, Cambria, sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 18px;
 	font-size: 1.125rem;
 	line-height: 1.5;
@@ -286,11 +286,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin-top: .75em;
 	margin-bottom: .25em;
 	clear: both;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
 h1 {
 	font-size: 3em;
+	font-weight: 700;
 }
 
 h2 {
@@ -335,7 +336,7 @@ blockquote:before {
 	top: -.2em;
 	left: -.13em;
 	content: "“";
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 12em;
 	line-height: 100%;
 	color: white;
@@ -495,7 +496,7 @@ input[type="submit"] {
 	border-color: black;
 	background: transparent;
 	color: black;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 20px;
 	font-size: 1.25rem;
 	line-height: 1;
@@ -617,7 +618,7 @@ a:hover, a:active {
 .post-navigation,
 .paging-navigation {
 	padding: 2em 0;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	text-align: left;
 	overflow: hidden;
 }
@@ -716,7 +717,7 @@ a:hover, a:active {
 }
 
 .pagination {
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
 .pagination .nav-links {
@@ -1029,7 +1030,7 @@ a:hover, a:active {
 .site-header {
 	position: relative;
 	padding: 1em;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	color: #fff;
 	background-color: #191d48;
 	border-bottom: 3px solid white;
@@ -1193,7 +1194,7 @@ Header Menu
 */
 .main-navigation {
 	display: block;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-weight: 100;
 	clear: left;
 }
@@ -1349,7 +1350,7 @@ button.dropdown-toggle {
 }
 
 .entry-header {
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
 .cat-links {
@@ -1522,7 +1523,7 @@ button.dropdown-toggle {
 
 .entry-footer {
 	margin: 1.5em 0;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -1559,7 +1560,7 @@ button.dropdown-toggle {
 .comment-meta {
 	position: relative;
 	margin-left: 70px;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 80%;
 }
 
@@ -1664,7 +1665,7 @@ button.dropdown-toggle {
 .reply a {
 	display: inline-block;
 	padding: .5em 1.4em;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 85%;
 	color: #000;
 	line-height: 1.3em;
@@ -1698,7 +1699,7 @@ button.dropdown-toggle {
 --------------------------------------------------------------*/
 .site-footer {
 	position: relative;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-weight: 100;
 	color: #fff;
 	background-color: #191d48;
@@ -1746,7 +1747,7 @@ button.dropdown-toggle {
 .widget {
 	margin: 0 0 2em;
 	padding: 0 0 2em;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	/* Make sure select elements fit in widgets. */
 }
 
@@ -1878,7 +1879,7 @@ button.dropdown-toggle {
 
 .rssSummary {
 	padding: .5em 0;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: .8em;
 	line-height: 1.4em;
 }
@@ -1997,7 +1998,7 @@ button.dropdown-toggle {
 	.footer-widgets .widget:only-of-type {
 		width: 100%;
 	}
-	.footer-widgets .widget:nth-last-child(n+2):nth-last-child(-n+3):first-child ~ .widget:nth-child(2) {
+	.footer-widgets .widget:nth-last-child(n+2):nth-last-child(n+3):first-child ~ .widget:nth-child(2) {
 		-webkit-box-flex: 2;
 		    -ms-flex: 2;
 		        flex: 2;
@@ -2131,6 +2132,25 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## homepage
+--------------------------------------------------------------*/
+.section-2 {
+	text-align: center;
+	height: 80%;
+	background-color: #ededed;
+	min-height: 100px;
+	overflow: hidden;
+	padding: 45px 0 90px 0;
+}
+
+.section-2 h2 {
+	padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=../lava/sass/maps/style.css.map */

@@ -5,7 +5,7 @@
 .widget {
 	margin: 0 0 2em;
 	padding: 0 0 2em;
-	font-family: $font_montserrat;
+	font-family: $font__rubik;
 
 	ul,
 	ol {
@@ -139,7 +139,7 @@
 
 .rssSummary {
 	padding: .5em 0;
-	font-family: $font_montserrat;
+	font-family: $font__rubik;
 	font-size: .8em;
     line-height: 1.4em;
 }
@@ -251,7 +251,7 @@
 		}
 
 		/* If 2 or 3 widgets are displayed, make the second one twice as wide. */
-		.widget:nth-last-child(n+2):nth-last-child(-n+3):first-child ~ .widget:nth-child(2) {
+		.widget:nth-last-child(n+2):nth-last-child(n+3):first-child ~ .widget:nth-child(2) {
 			flex: 2;
 		}
 
