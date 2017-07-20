@@ -90,7 +90,7 @@ endif;
 add_action( 'after_setup_theme', 'lava_setup' );
 
 /**
- * Register custom fonts.
+ * Register google custom fonts.
  */
 function lava_fonts_url() {
 	$fonts_url = '';
@@ -100,11 +100,18 @@ function lava_fonts_url() {
 	 * supported by Roboto and Montserrat, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
+
+	$rubik = _x( 'on', 'Rubik font: on or off', 'lava' );
+
 	$roboto = _x( 'on', 'Roboto font: on or off', 'lava' );
 
 	$montserrat = _x( 'on', 'Montserrat font: on or off', 'lava' );
 
 	$font_families = array();
+
+	if ( 'off' !== $rubik ) {
+		$font_families[] = 'Rubik:300i,400,400i,500,700';
+	}
 
 	if ( 'off' !== $roboto ) {
 		$font_families[] = 'Roboto:300,400,700,900';
@@ -114,7 +121,7 @@ function lava_fonts_url() {
 		$font_families[] = 'Montserrat:300,400,400i,700';
 	}
 
-	if ( in_array('on', array($roboto, $montserrat)) ) {
+	if ( in_array('on', array($rubik, $roboto, $montserrat)) ) {
 
 		$query_args = array(
 			'family' => urlencode( implode( '|', $font_families ) ),
