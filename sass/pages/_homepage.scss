@@ -87,3 +87,55 @@
     	}
 }
 
+.section-3 {
+	text-align: center;
+    height: auto;
+  	color: white;
+  	background-size: cover;
+  	background: linear-gradient(
+      rgba(0,0,0,0.7), 
+      rgba(0,0,0,0.7)
+    ),
+    url('images/andrew-neel-308138.jpg');
+    background-size: cover;
+    margin: 0 0 -22px 0;
+    padding-top: 60px;
+
+    	h3{
+    		font-size: 3.5em;
+    		font-weight: 200px;
+    	}
+
+    	ul{
+    		list-style-type: none;
+    		//display: flex;
+    		display: flex;
+  			align-items: center;
+  			justify-content: center;
+
+    	}
+			li {
+				style: none;
+				margin: 30px;
+
+
+					.section-icon {
+						border-radius: 150px;
+		                //border: 2px solid red;
+		                background-color: #eee;
+		                width: 135px;
+		                height: auto;
+					}
+
+					h6 {
+						font-size: 2em;
+						}
+					p {
+						font-size: 1.5em;
+
+					}
+
+			}
+
+}
+
