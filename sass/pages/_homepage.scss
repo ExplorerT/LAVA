@@ -253,7 +253,22 @@ div.wpcf7-mail-sent-ok{
 	margin: 0;
 }
 
-
+.sponsors {
+	height: auto;
+	text-align: center;
+    height: auto;
+  	color: white;
+  	background-size: cover;
+  	background: linear-gradient(
+      rgba(0,0,0,0.7), 
+      rgba(0,0,0,0.7)
+    ),
+    url('images/sponsors-bg.jpg');
+    background-size: cover;
+    padding-top: 10px;
+    font-size: 15px;
+	
+}
 
 }
 
