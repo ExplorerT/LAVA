@@ -8,12 +8,15 @@
 	}
 }
 .site-header {
-	position: relative;
-	padding: 1em;
+	position: fixed;
+	//padding: 1em;
 	font-family: $font__rubik;
 	color: #fff;
 	background-color: #191d48;
 	border-bottom: 3px solid white;
+	z-index: 170;
+	width: 100%;
+	margin-top: -24px;
 
 
 	
@@ -101,80 +104,7 @@
 	}*/
 
 
-    .main-header-content {
-        margin-top: -40px;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        background: linear-gradient(#2d4c68, #14ACAF);
-	    background-image: linear-gradient(rgb(45, 76, 104), rgb(10, 172, 175));
-	    background-position-x: initial;
-	    background-position-y: initial;
-	    background-size: initial;
-	    background-repeat-x: initial;
-	    background-repeat-y: initial;
-	    background-attachment: initial;
-	    background-origin: initial;
-	    background-clip: initial;
-	    background-color: initial;
-        font-family: $font_montserrat;
-        //background-image:  url("http://localhost:8888/LAVA/wp-content/uploads/2017/06/todd-quackenbush-27493.jpg");
-
-        h1 {
-            font-size: 4.6em;
-            text-align: center;
-            text-transform: uppercase;
-            line-height: 10px;
-            margin-top: 120px;
-            font-weight: 200;
-            color: #fff;
-        }
-
-        hr {
-        	width: 250px;
-        	background-color: #d00;
-        	height: 2px;
-        	margin-top: 80px;
-
-        }
-
-        h2 {
-            font-size: 2.6em;
-             font-weight: 200;
-             color: white;  
-            
-        	}
-
-        ul {
-            
-            display: flex;
-            list-style:none;
-            text-align: center;
-            width: 550px;
-            margin: 0 auto;
-
-
-            h5 {
-
-                font-size: 1.3em;
-                font-weight: 100;
-                color: white;
-                
-            }
-
-            img {
-                border-radius: 130px;
-                //border: 2px solid red;
-                background-color: #ddd;
-                width: 135px;
-                height: auto;
-            }
-
-        }
-
-    }
-
-}
+}    
 
 /* 
 Header Menu
