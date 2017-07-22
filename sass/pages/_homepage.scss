@@ -1,12 +1,73 @@
-.section-2 {
+.section-1 {
+    margin-top: 0px;
+    width: 100%;
+    padding: 90px;
     text-align: center;
-    height: 80%;
-    background-color: #ededed;
-    min-height: 100px;
-    overflow: hidden;
-    //line-height: 3;
-    padding: 45px 0 90px 0;
-    	h2{
-    		padding-bottom: 40px;
-    	}
+    background: linear-gradient(#2d4c68, #14ACAF);
+	background-image: linear-gradient(rgb(45, 76, 104), rgb(10, 172, 175));
+	background-position-x: initial;
+	background-position-y: initial;
+	background-size: initial;
+	background-repeat-x: initial;
+	background-repeat-y: initial;
+	background-attachment: initial;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+    font-family: $font_montserrat;
+    height: 700px;
+    //background-image:  url("http://localhost:8888/LAVA/wp-content/uploads/2017/06/todd-quackenbush-27493.jpg");
+
+    h1 {
+        font-size: 5em;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 10px;
+        margin-top: 120px;
+        color: #fff;
+    }
+
+    hr {
+        width: 250px;
+        background-color: #d00;
+        height: 2px;
+        margin-top: 80px;
+
+    }
+
+    h2 {
+        font-size: 2.6em;
+             //font-weight: 200;
+        color: white;  
+            
+       }
+
+    ul {
+            
+        display: flex;
+        list-style:none;
+        text-align: center;
+        width: 550px;
+        margin: 0 auto;
+
+
+        h5 {
+
+            font-size: 1.3em;
+            font-weight: 100;
+            color: white;
+                
+        }
+
+        img {
+            border-radius: 130px;
+             //border: 2px solid red;
+            background-color: #ddd;
+            width: 135px;
+            height: auto;
+        }
+
+    }
+
 }
+
