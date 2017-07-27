@@ -9,7 +9,7 @@
 .site-content {
 	max-width: $size__max-width;
 	margin: 0 auto;
-}
+	
 
 /* Single posts */
 @media screen and (min-width: $query__medium) {
@@ -61,7 +61,7 @@
 				justify-content: space-between;
 
 				.entry-meta {
-					width: 0%;
+					width: 20%;
 				}
 
 				.post-content__body {

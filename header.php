@@ -13,7 +13,7 @@
 <html <?php language_attributes(); ?> class="no-svg">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
@@ -61,28 +61,5 @@
 <?php endif; ?>
 
 <!-- header content -->
-<!--
-<?php if (is_front_page()) : ?>
-<div class="main-header-content">
-    	<h1> Welcome to lava!</h1>
-    	<hr>
-    	<h2>What do you want to do?</h2>
-    		<ul id="icon-container">
-    			<li id="map-icon">
-    				<img src="http://localhost:8888/LAVA/wp-content/uploads/2017/06/Picture1-1.png">
-    				<h5>Find a facility location</h5>
-    			</li>
-    			<li id="facility-icon">
-    				<img src="http://localhost:8888/LAVA/wp-content/uploads/2017/06/Picture2-1.png">
-    				<h5>Find a facility by feature</h5>
-    			</li>
-    			
-    		</ul>
-            
-</div> -->
-<!--header content
-
-<?php endif; ?>
-
 
 	<div id="content" class="site-content">
