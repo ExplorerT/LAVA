@@ -758,9 +758,9 @@ a:hover, a:active {
 ## homepage
 --------------------------------------------------------------*/
 .section-1 {
-	margin-top: 0px;
-	width: 100%;
-	padding: 90px;
+	margin-top: -1.5em;
+	width: auto;
+	overflow: hidden;
 	text-align: center;
 	background: linear-gradient(#2d4c68, #14ACAF);
 	background-image: linear-gradient(#2d4c68, #0aacaf);
@@ -774,14 +774,14 @@ a:hover, a:active {
 	background-clip: initial;
 	background-color: initial;
 	font-family: "Montserrat", "Lucida Grande" sans-serif;
-	height: 700px;
+	height: auto;
 }
 
 .section-1 h1 {
-	font-size: 5em;
+	font-size: 4em;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 10px;
+	line-height: 100px;
 	margin-top: 120px;
 	color: #fff;
 }
@@ -790,7 +790,7 @@ a:hover, a:active {
 	width: 250px;
 	background-color: #d00;
 	height: 2px;
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .section-1 h2 {
@@ -799,13 +799,16 @@ a:hover, a:active {
 }
 
 .section-1 ul {
+	list-style-type: none;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	list-style: none;
-	text-align: center;
-	width: 550px;
-	margin: 0 auto;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .section-1 ul h5 {
@@ -817,7 +820,7 @@ a:hover, a:active {
 .section-1 ul img {
 	border-radius: 130px;
 	background-color: #ddd;
-	width: 135px;
+	width: 115px;
 	height: auto;
 }
 
@@ -891,7 +894,7 @@ a:hover, a:active {
 	background-color: #ededed;
 	min-height: 100px;
 	margin-top: -3em;
-	padding: 35px 0 0px 0;
+	padding: 35px 0 0 0;
 	margin: 0 0 -23px 0;
 	/**-----------Front-page contact form--------------**/
 	/**---------------- Media query ----------------**/
@@ -1015,6 +1018,21 @@ a:hover, a:active {
 	font-size: 15px;
 }
 
+.content {
+	width: 100%;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
+}
+
+.content .entry-content,
+.content .entry-summary {
+	margin: 1.5em 0 0;
+	width: 100%;
+}
+
+.content .hentry {
+	margin: -1em;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1118,8 +1136,9 @@ a:hover, a:active {
 }
 
 .site-content {
-	max-width: 1080px;
 	margin: 0 auto;
+	background-color: red;
+	max-width: 100%;
 }
 
 /* Single posts */
@@ -1156,11 +1175,6 @@ a:hover, a:active {
 		    -ms-flex-direction: row-reverse;
 		        flex-direction: row-reverse;
 	}
-	.page:not(.has-page-sidebar) .hentry {
-		-webkit-box-pack: end;
-		    -ms-flex-pack: end;
-		        justify-content: flex-end;
-	}
 }
 
 @media screen and (min-width: 900px) {
@@ -1173,7 +1187,7 @@ a:hover, a:active {
 		        justify-content: space-between;
 	}
 	.single.no-sidebar .post-content__wrap .entry-meta {
-		width: 0%;
+		width: 20%;
 	}
 	.single.no-sidebar .post-content__wrap .post-content__body {
 		width: 70%;
@@ -1293,13 +1307,24 @@ a:hover, a:active {
 
 .site-header {
 	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 170;
+	margin: 0 auto;
 	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	color: #fff;
 	background-color: #191d48;
-	border-bottom: 3px solid white;
-	z-index: 170;
 	width: 100%;
-	margin-top: -24px;
+	/*.site-header {
+	position: fixed;
+	padding: 1em;
+	font-family: $font__rubik;
+	color: #fff;
+	background-color: #191d48;
+	//width: 960px;
+	//margin: 0px auto;
+	//z-index: 170;*/
 }
 
 @media screen and (min-width: 600px) {
@@ -1383,18 +1408,6 @@ a:hover, a:active {
 	.site-navigation {
 		width: 55%;
 	}
-	/*.main-navigation ul {
-        list-style: none;
-        margin-top: 15px;
-        padding-left: 0;
-        float: right;
-        font-size: .75em;
-
-            li a {
-                padding-right: 20px !important;
-                padding-left: 20px !important;
-            }
-	}*/
 }
 
 /* 
@@ -1599,7 +1612,7 @@ button.dropdown-toggle {
 
 .entry-meta,
 .entry-footer {
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-size: 90%;
 }
 
