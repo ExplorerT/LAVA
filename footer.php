@@ -21,9 +21,9 @@
 		<?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
 	</nav>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lava' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'lava' ), 'WordPress' ); ?></a>
+			<a href="<?php echo esc_url( __( '#', 'lava' ) ); ?>"><?php printf( esc_html__( 'Copyright © 2017 %s', 'lava' ), 'rivonline.org' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lava' ), 'lava', '<a href="https://automattic.com/" rel="designer">Tolu Agbaje</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lava' ), 'lava', '<a href="#" rel="designer">Tolu Agbaje</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

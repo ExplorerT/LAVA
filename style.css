@@ -290,16 +290,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 5em;
 	font-weight: 700;
 }
 
 h2 {
-	font-size: 2.6em;
+	font-size: 3.5em;
 }
 
 h3 {
-	font-size: 2.2em;
+	font-size: 3.3em;
 }
 
 h4 {
@@ -762,6 +762,7 @@ a:hover, a:active {
 	width: auto;
 	overflow: hidden;
 	text-align: center;
+	height: auto;
 	background: linear-gradient(#2d4c68, #14ACAF);
 	background-image: linear-gradient(#2d4c68, #0aacaf);
 	background-position-x: initial;
@@ -773,29 +774,37 @@ a:hover, a:active {
 	background-origin: initial;
 	background-clip: initial;
 	background-color: initial;
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	height: auto;
 }
 
 .section-1 h1 {
-	font-size: 4em;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 100px;
-	margin-top: 120px;
+	line-height: 1.25em;
 	color: #fff;
+	font-weight: 200;
+	padding: 50px 0 0 0;
+}
+
+@media screen and (min-width: 48em) {
+	.section-1 h1 {
+		padding: 100px 0 0 0;
+	}
 }
 
 .section-1 hr {
-	width: 250px;
-	background-color: #d00;
+	width: 150px;
+	background-color: #f15a29;
 	height: 2px;
-	margin-top: 60px;
+	margin-top: 0px;
 }
 
 .section-1 h2 {
-	font-size: 2.6em;
-	color: white;
+	font-size: 3em;
+	font-weight: 200;
+	color: #fff;
+	text-align: center;
 }
 
 .section-1 ul {
@@ -809,63 +818,135 @@ a:hover, a:active {
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	text-decoration: none;
 }
 
-.section-1 ul h5 {
-	font-size: 1.3em;
-	font-weight: 100;
+.section-1 ul a {
+	text-decoration: none !important;
+}
+
+.section-1 ul a:hover {
 	color: white;
+	cursor: pointer;
 }
 
-.section-1 ul img {
-	border-radius: 130px;
+.section-1 ul li {
+	style: none;
+	margin: 30px;
+}
+
+.section-1 ul li .section-icon {
+	border-radius: 150px;
 	background-color: #ddd;
-	width: 115px;
+	width: 135px;
 	height: auto;
 }
 
+.section-1 ul li h6 {
+	font-size: 2em;
+	color: #fff;
+}
+
+.section-1 ul li p {
+	font-size: 2em;
+	color: #fff;
+	text-decoration: none;
+}
+
+/*ul {
+        list-style-type: none;    
+        display: flex;
+  		//align-items: center;
+  		justify-content: center;
+
+
+        h5 {
+
+            font-size: 1.6em;
+            font-weight: 100;
+            color: #fff;
+                
+        }
+
+        img {
+            border-radius: 130px;
+            border: 2px solid #f15a29;
+            background-color: #eee;
+            width: 135px;
+		    height: auto;
+        }
+
+    }*/
 .section-2 {
 	text-align: center;
 	height: auto;
-	background-color: #ededed;
-	min-height: 100px;
+	background-color: #eee;
+	min-height: 700px;
 	overflow: hidden;
-	padding: 45px 0 90px 0;
+	padding-top: 50px;
 }
 
 .section-2 h2 {
 	padding-bottom: 40px;
-	font-size: 3.5em;
+	font-size: 3.2em;
 	color: #8dc63f;
+	font-weight: 300;
 }
 
 .section-3 {
 	text-align: center;
 	height: auto;
-	color: white;
+	color: #fff;
 	background-size: cover;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/andrew-neel-308138.jpg");
 	background-size: cover;
 	margin: 0 0 -22px 0;
 	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.section-3 .button {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 900;
+	color: #fff;
+	background: #8dc63f;
+	border-radius: 100px;
+	padding: 11px 32px 13px;
+	display: inline-block;
+	text-decoration: none !important;
+	width: 280px;
+}
+
+@media only screen and (min-width: 48em) {
+	.section-3 .button {
+		width: 280px;
+		padding: 11px 32px 13px;
+	}
+	.section-3 ul {
+		list-style-type: none;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
 }
 
 .section-3 h3 {
-	font-size: 3.5em;
-	font-weight: 200px;
+	font-size: 3.2em;
+	font-weight: 300;
 }
 
 .section-3 ul {
 	list-style-type: none;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
 }
 
 .section-3 li {
@@ -875,7 +956,7 @@ a:hover, a:active {
 
 .section-3 li .section-icon {
 	border-radius: 150px;
-	background-color: #eee;
+	background-color: #fff;
 	width: 135px;
 	height: auto;
 }
@@ -885,11 +966,15 @@ a:hover, a:active {
 }
 
 .section-3 li p {
-	font-size: 1.5em;
+	font-size: 1.4em;
+	letter-spacing: -0.015em;
+	line-height: 40px;
+	padding-top: 0.8em;
 }
 
 .section-4 {
 	height: auto;
+	color: #333;
 	text-align: center;
 	background-color: #ededed;
 	min-height: 100px;
@@ -901,8 +986,7 @@ a:hover, a:active {
 }
 
 .section-4 h3 {
-	font-size: 3.5em;
-	font-weight: 200px;
+	font-size: 3.8em;
 }
 
 .section-4 p {
@@ -964,7 +1048,7 @@ a:hover, a:active {
 
 .section-4 .wpcf7-submit {
 	float: right;
-	background: #CA0002;
+	background: #f15a29;
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
@@ -973,7 +1057,8 @@ a:hover, a:active {
 }
 
 .section-4 .wpcf7-submit:hover {
-	background: #ff0000;
+	background: #8dc63f;
+	color: #f15a29;
 }
 
 .section-4 span.wpcf7-not-valid-tip {
@@ -1010,16 +1095,17 @@ a:hover, a:active {
 	height: auto;
 	text-align: center;
 	height: auto;
-	color: white;
+	color: #fff;
 	background-size: cover;
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/sponsors-bg.jpg");
 	background-size: cover;
 	padding-top: 10px;
-	font-size: 15px;
+	font-size: 19px;
+	margin-bottom: -2.8em;
 }
 
 .content {
-	width: 100%;
+	width: auto;
 	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
@@ -1029,8 +1115,11 @@ a:hover, a:active {
 	width: 100%;
 }
 
-.content .hentry {
-	margin: -1em;
+@media screen and (min-width: 900px) {
+	.content {
+		margin-left: -2em;
+		margin-right: -1em;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1126,18 +1215,7 @@ a:hover, a:active {
 ## Global layouts
 --------------------------------------------------------------*/
 .site-content {
-	padding: 1em;
-}
-
-@media screen and (min-width: 600px) {
-	.site-content {
-		padding: 2em;
-	}
-}
-
-.site-content {
 	margin: 0 auto;
-	background-color: red;
 	max-width: 100%;
 }
 
@@ -1174,6 +1252,11 @@ a:hover, a:active {
 		-webkit-box-direction: reverse;
 		    -ms-flex-direction: row-reverse;
 		        flex-direction: row-reverse;
+	}
+	.page:not(.has-page-sidebar) .hentry {
+		-webkit-box-pack: end;
+		    -ms-flex-pack: end;
+		        justify-content: flex-end;
 	}
 }
 
@@ -1237,7 +1320,7 @@ a:hover, a:active {
 }
 
 .page-header {
-	font-family: "Montserrat", "Lucida Grande" sans-serif;
+	font-family: "Rubik", Georgia, Cambria, sans-serif;
 }
 
 .page-title {
@@ -1306,16 +1389,12 @@ a:hover, a:active {
 }
 
 .site-header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 170;
-	margin: 0 auto;
+	position: relative;
 	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	color: #fff;
-	background-color: #191d48;
+	background-color: #b30606;
 	width: 100%;
+	margin: 0 auto;
 	/*.site-header {
 	position: fixed;
 	padding: 1em;
@@ -1327,9 +1406,16 @@ a:hover, a:active {
 	//z-index: 170;*/
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 48em) {
 	.site-header {
 		padding: 1em 2em;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 170;
+		margin: 0 auto;
+		width: 100%;
 	}
 }
 
@@ -1555,7 +1641,7 @@ button.dropdown-toggle {
 		-webkit-box-pack: end;
 		    -ms-flex-pack: end;
 		        justify-content: flex-end;
-		padding-top: 0;
+		padding-top: .6em;
 	}
 }
 
@@ -1920,9 +2006,10 @@ button.dropdown-toggle {
 --------------------------------------------------------------*/
 .site-footer {
 	position: relative;
+	padding: 1em;
 	font-family: "Rubik", Georgia, Cambria, sans-serif;
 	font-weight: 100;
-	color: #fff;
+	color: #333;
 	background-color: #191d48;
 	border-bottom: 3px solid red;
 	text-align: center;
@@ -1950,7 +2037,7 @@ button.dropdown-toggle {
 .footer-menu ul a {
 	display: block;
 	padding: .5em 1em;
-	color: white;
+	color: #333;
 	text-decoration: none;
 }
 
