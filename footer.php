@@ -12,6 +12,9 @@
 ?>
 
 	</div><!-- #content -->
+	<div class="back-to-top">
+	<a class="ps2id" href="#top"><img src="/images/up-arrow.jpg"> Back to top</a>
+	</div>
 
 	<?php get_sidebar( 'footer' ); ?>
 
