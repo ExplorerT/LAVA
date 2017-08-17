@@ -12,21 +12,26 @@
 ?>
 
 	</div><!-- #content -->
-	<div class="back-to-top">
-	<a class="ps2id" href="#top"><img src="/images/up-arrow.jpg"> Back to top</a>
-	</div>
 
 	<?php get_sidebar( 'footer' ); ?>
 
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<nav class="footer-menu">
-		<?php wp_nav_menu( array( 'theme_location' => 'menu-2' ) ); ?>
+
+	<a class="ps2id" href="#top"><i class="fa fa-angle-up fa-5x" aria-hidden="true"></i><br>Back to Top</a>
+
+	<ul>
+	<li><a href="#"><i class="fa fa-facebook fa-4x"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram fa-4x"></i></a></li>
+	<li><a href="#"><i class="fa fa-twitter fa-4x"></i></a></li>
+	</ul>
 	</nav>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( '#', 'lava' ) ); ?>"><?php printf( esc_html__( 'Copyright © 2017 %s', 'lava' ), 'rivonline.org' ); ?></a>
+			<a href="<?php echo esc_url( __( '#', 'lava' ) ); ?>"><?php printf( esc_html__( '© 2017 %s', 'lava' ), 'rivonline.org' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lava' ), 'lava', '<a href="#" rel="designer">Tolu Agbaje</a>' ); ?>
+			<a href="#" rel="designer">Privacy Policy</a>
+			<span class="sep"> | </span>
+			<a href="#" rel="designer">Credits</a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
