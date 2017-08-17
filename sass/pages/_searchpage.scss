@@ -1,0 +1,95 @@
+.search-category {
+    text-align: center;
+    //padding: 150px;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-color: #27aae1;
+
+        h2 {
+            padding: 60px 0;
+            font-weight: 200;
+            text-align: center;
+            font-size: 80px;
+        }
+
+         @media screen and (min-width: $query__medium) {
+            padding: 150px;
+            height: 100%;
+         }
+
+         button, input {
+            color: #fff;
+            font-size: 1.5em;
+            font-family: $font__rubik;
+            border-color: #f15a29;
+            height: 3.3em;
+            //background-color: #eee;
+            width: 8em;
+            //border-radius: 0.4em;
+            background-color: #f15a29;
+            //display: flex;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: #000;
+                    color: #fff;
+                    border-color: #000;
+                }
+         }
+
+
+}
+
+
+ select {
+    border: 5px solid #000;
+    width: 700px;
+    height: 80px;
+    color: green;
+    background-color: white;
+
+
+        
+        #cat .postform {
+            background-color: #f15a29;
+        }
+}
+
+#searchform {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.search-category #s {
+
+         display: none;
+        }
+option .level-0 {
+    background-color: #f15a29;
+}
+
+button #search-submit {
+      position: relative;
+    }
+.search-btn {
+    display: flex;
+    padding: 6px 3px;
+    font-size: 1em;
+    //font-weight: bold;
+    color: white;
+    text-align: center;
+
+    //margin: 15px 0 25px 0px;
+    i {
+        //font-size: 30px;
+        padding-right: 15px;
+    }
+
+}
