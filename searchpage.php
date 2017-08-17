@@ -1,4 +1,9 @@
 <?php
+/*
+Template Name: Search Page
+*/
+?>
+<?php
 /**
  * The template for displaying all pages
  *
@@ -16,20 +21,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
-			<?php
-			while ( have_posts() ) : the_post();
-
-				get_template_part( 'template-parts/content-page', 'page' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
+			<div class="search-category">
+				<h2> Search Facility by Feature</h2>
+				<form id="searchform" method="get" action="<?php echo home_url(); ?>">
+				    <input type="text" name="s" id="s" size="15" />
+				    <?php wp_dropdown_categories( 'show_option_none=Select' ); ?>
+				    <input type="submit" value="Search" />
+				</form>
+			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

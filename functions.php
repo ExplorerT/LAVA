@@ -336,3 +336,60 @@ require get_template_directory() . '/inc/jetpack.php';
  */
 require get_template_directory() . '/inc/icon-functions.php';
 
+/**
+ * Search by category functions.
+ */
+add_action( 'pre_get_posts', 'search_by_cat' );
+
+function search_by_cat()
+{
+    if ( is_search() )
+    {
+        $cat = empty( $_GET['cat'] ) ? '' : (int) $_GET['cat'];
+        add_query_arg( 'cat', $cat );
+    }
+}
+
+/**
+ * Custom Header Support.
+ */
+
+
+$args = array(
+	'width'         => 980,
+	'height'        => 60,
+	'default-image' => get_template_directory_uri() . '/images/header.jpg',
+	'uploads'       => true,
+);
+add_theme_support( 'custom-header', $args );
+
+/**
+ * Register Custom Header Support.
+ */
+register_default_headers( array(
+	'wheel' => array(
+		'url'           => '%s/images/headers/contact-us.jpg',
+		'thumbnail_url' => '%s/images/headers/sponsors-bg.jpg',
+		'description'   => __( 'Wheel', 'lava' )
+	),
+	'shore' => array(
+		'url'           => '%s/images/headers/sunset.jpg',
+		'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
+		'description'   => __( 'Shore', 'lava' )
+	),
+	'trolley' => array(
+		'url'           => '%s/images/headers/sunset.jpg',
+		'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
+		'description'   => __( 'Trolley', 'lava' )
+	)
+) );
+
+/**
+ * Register Font Awesome.
+ */
+add_action( 'wp_enqueue_scripts', 'enqueue_load_fa' );
+function enqueue_load_fa() {
+
+  wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+
+}
