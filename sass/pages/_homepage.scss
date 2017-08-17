@@ -19,7 +19,7 @@
 	background-color: initial;
     font-family: $font__rubik;
     height: auto;
-    //background-image:  url("http://localhost:8888/LAVA/wp-content/uploads/2017/06/todd-quackenbush-27493.jpg");
+    //background-image:  url("http://localhost:8888/LAVA/wp-content/themes/lava/images/headers/audi-nissen-114638.jpg");
 	
 
     h1 {
@@ -347,7 +347,6 @@ div.wpcf7-mail-sent-ok{
 .sponsors {
 	height: auto;
 	text-align: center;
-    height: auto;
   	color: #fff;
   	background-size: cover;
   	background: linear-gradient(
@@ -365,27 +364,50 @@ div.wpcf7-mail-sent-ok{
 
 }
 
-.content {
-	width: auto;
-	font-family: $font__rubik;
-	//margin-left: -1.5em;
-    //margin-right: em;
+.homepage {
+		.content {
+		width: auto;
+		font-family: $font__rubik;
+		//margin-left: -1.5em;
+	    //margin-right: em;
 
-	.entry-content, 
-	.entry-summary {
-    	margin: 1.5em 0 0;
-    	width: 100%;
+		.entry-content, 
+		.entry-summary {
+	    	margin: 1.5em 0 0;
+	    	width: 100%;
 
-	}
-	.hentry {
-	//margin: 1em;
-	}
+		}
+		.hentry {
+		margin: 1em;
+		}
 
-@media screen and (min-width: $query__medium) {
+	@media screen and (min-width: $query__medium) {
 
-	margin-left: -2em;
-    margin-right: -1em;
+		margin-left: -2em;
+	    margin-right: -1em;
 
-	}
+		}
 
 }
+}
+
+/*.search-category {
+    text-align: center;
+    //padding: 150px;
+
+ @media screen and (min-width: $query__medium) {
+ 	padding: 150px;
+ 	height: 100%;
+ }
+
+	 #searchform input {
+	 	color: green;
+	 	font-size: 30px;
+	 	font-family: $font__rubik;
+	 	border-color: red;
+	 	height: 70px;
+	 	background-color: #eee;
+	 	//width: 7em;
+	 }
+
+}*/
