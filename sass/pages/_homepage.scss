@@ -20,7 +20,7 @@
     font-family: $font__rubik;
     height: auto;
     //background-image:  url("http://localhost:8888/LAVA/wp-content/themes/lava/images/headers/audi-nissen-114638.jpg");
-	
+
 
     h1 {
         //font-size: 6em;
@@ -48,11 +48,11 @@
     h2 {
         font-size: 3em;
         font-weight: 200;
-        color: #fff; 
+        color: #fff;
         //padding-bottom: 1em;
-        //padding-top: .7em; 
+        //padding-top: .7em;
         text-align: center;
-            
+
        }
 
      ul{
@@ -70,7 +70,7 @@
     			//text-decoration:none;
     			cursor:pointer;
    			}
-    	
+
 			li {
 				style: none;
 				margin: 30px;
@@ -100,7 +100,7 @@
 }
 
     /*ul {
-        list-style-type: none;    
+        list-style-type: none;
         display: flex;
   		//align-items: center;
   		justify-content: center;
@@ -111,7 +111,7 @@
             font-size: 1.6em;
             font-weight: 100;
             color: #fff;
-                
+
         }
 
         img {
@@ -147,7 +147,7 @@
   	color: #fff;
   	background-size: cover;
   	background: linear-gradient(
-      rgba(0,0,0,0.7), 
+      rgba(0,0,0,0.7),
       rgba(0,0,0,0.7)
     ),
     url('images/andrew-neel-308138.jpg');
@@ -169,9 +169,9 @@
 	    text-decoration: none !important;
 	    width: 280px;
 	    //height: 150px;
-		}	
+		}
 
-	@media only screen and (min-width: 48em) { 
+	@media only screen and (min-width: 48em) {
 		.button {
 			width: 280px;
 			padding: 11px 32px 13px;
@@ -237,7 +237,7 @@
     margin-top: -3em;
     padding: 35px 0 0 0;
     margin: 0 0 -23px 0;
-   
+
 	h3 {
 		font-size: 3.8em;
     	//font-weight: 200px;
@@ -280,7 +280,7 @@
 }
 
 /**---------------- Media query ----------------**/
-@media only screen and (min-width: 48em) { 
+@media only screen and (min-width: 48em) {
 	.column-half {
 		width: 50%;
 	}
@@ -323,7 +323,7 @@ span.wpcf7-not-valid-tip{
 	background: #ff0000;
 	padding: 5px;
 }
-div.wpcf7-validation-errors { 
+div.wpcf7-validation-errors {
 	text-shadow: none;
 	border: transparent;
 	background: #f9cd00;
@@ -350,7 +350,7 @@ div.wpcf7-mail-sent-ok{
   	color: #fff;
   	background-size: cover;
   	background: linear-gradient(
-      rgba(0,0,0,0.7), 
+      rgba(0,0,0,0.7),
       rgba(0,0,0,0.7)
     ),
     url('images/sponsors-bg.jpg');
@@ -359,7 +359,7 @@ div.wpcf7-mail-sent-ok{
     font-size: 19px;
     margin-bottom: -2.8em;
     //font-family: $font_montserrat !important;
-	
+
 }
 
 }
@@ -371,7 +371,7 @@ div.wpcf7-mail-sent-ok{
 		//margin-left: -1.5em;
 	    //margin-right: em;
 
-		.entry-content, 
+		.entry-content,
 		.entry-summary {
 	    	margin: 1.5em 0 0;
 	    	width: 100%;
@@ -411,3 +411,46 @@ div.wpcf7-mail-sent-ok{
 	 }
 
 }*/
+
+.explore-images .neighborhood-listing,
+.explore-images .leasing-plan {
+    visibility: hidden;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+.explore-images .neighborhood-listing.visible,
+.explore-images .leasing-plan.visible {
+	display: block;
+    visibility: visible;
+}
+
+.explore {
+	padding: 2.5% 5%;
+	background-color: #f2efef;
+}
+.explore h4 {
+	margin-top: 0;
+	margin-bottom: .5em;
+}
+
+/* .directory-btns, */
+.neighborhood-btns {
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 480px) {
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+}
+
+#map-dining, #map-shopping, #map-schools, #map-parks, #map-hospitals, #map-colleges{
+	width:100%;
+	height: 400px;
+}
