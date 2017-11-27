@@ -381,9 +381,9 @@ function getCatSearchFilter($pre,$post){
 /**
  * Register google map
  */
-
+/*
 function add_wp_scripts() {
-		wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?&key=AIzaSyDJZ_5uSYCJOzoIn0HfEZTrJqTWttaEBJA&callback=initMap', array(), '', true);
+		wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?&key=AIzaSyDJZ_5uSYCJOzoIn0HfEZTrJqTWttaEBJA&callback', array(), '', true);
 		wp_register_script('script', get_template_directory_uri() . '/js/map.js', array('jquery'), '1.0.0', true);
 
 
@@ -392,3 +392,5 @@ function add_wp_scripts() {
     wp_enqueue_script('script');
 }
 add_action( 'wp_enqueue_scripts', 'add_wp_scripts' );
+
+*/
