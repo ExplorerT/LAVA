@@ -853,30 +853,6 @@ a:hover, a:active {
 	text-decoration: none;
 }
 
-/*ul {
-        list-style-type: none;
-        display: flex;
-  		//align-items: center;
-  		justify-content: center;
-
-
-        h5 {
-
-            font-size: 1.6em;
-            font-weight: 100;
-            color: #fff;
-
-        }
-
-        img {
-            border-radius: 130px;
-            border: 2px solid #f15a29;
-            background-color: #eee;
-            width: 135px;
-		    height: auto;
-        }
-
-    }*/
 .section-2 {
 	text-align: center;
 	height: auto;
@@ -1125,26 +1101,6 @@ a:hover, a:active {
 	}
 }
 
-/*.search-category {
-    text-align: center;
-    //padding: 150px;
-
- @media screen and (min-width: $query__medium) {
- 	padding: 150px;
- 	height: 100%;
- }
-
-	 #searchform input {
-	 	color: green;
-	 	font-size: 30px;
-	 	font-family: $font__rubik;
-	 	border-color: red;
-	 	height: 70px;
-	 	background-color: #eee;
-	 	//width: 7em;
-	 }
-
-}*/
 /*--------------------------------------------------------------
 ## Searchpage
 --------------------------------------------------------------*/
@@ -2578,15 +2534,6 @@ button #search-submit {
 	background-color: #b30606;
 	width: 100%;
 	margin: 0 auto;
-	/*.site-header {
-	position: fixed;
-	padding: 1em;
-	font-family: $font__rubik;
-	color: #fff;
-	background-color: #191d48;
-	//width: 960px;
-	//margin: 0px auto;
-	//z-index: 170;*/
 }
 
 @media screen and (min-width: 48em) {
@@ -3201,7 +3148,6 @@ button.dropdown-toggle {
 	font-weight: 100;
 	color: #333;
 	background-color: #191d48;
-	border-bottom: 3px solid red;
 	text-align: center;
 	height: 400px;
 	font-size: 16px;
@@ -3232,7 +3178,8 @@ button.dropdown-toggle {
 
 .site-info {
 	text-align: center;
-	font-size: 17px;
+	font-size: 16px;
+	padding: 30px 0 40px 0;
 }
 
 .footer-menu ul {
@@ -3270,9 +3217,29 @@ button.dropdown-toggle {
 	color: #f15a29;
 }
 
+.footer-menu .footer-page-links a {
+	display: inline-block;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 0 20px 0 20px;
+	font-size: large;
+	font-weight: 500;
+}
+
 .footer-menu .ps2id {
 	text-align: center;
 	font-size: 20px;
+}
+
+.footer-page-links a {
+	display: inline-block;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 0 20px 0 20px;
+	font-size: large;
+	font-weight: 500;
 }
 
 /*--------------------------------------------------------------
@@ -3673,52 +3640,3 @@ object {
 }
 
 /*# sourceMappingURL=../lava/sass/maps/style.css.map */
-
-.explore-images .neighborhood-listing,
-.explore-images .leasing-plan {
-    visibility: hidden;
-    position: absolute;
-    height: 400px;
-    width: 100%;
-}
-.explore-images .neighborhood-listing.visible,
-.explore-images .leasing-plan.visible {
-	display: block;
-    visibility: visible;
-}
-
-.explore {
-	padding: 2.5% 5%;
-	background-color: #f2efef;
-}
-.explore h4 {
-	margin-top: 0;
-	margin-bottom: .5em;
-}
-
-/* .directory-btns, */
-.neighborhood-btns {
-	position: relative;
-	top: 0;
-	right: 0;
-}
-
-@media screen and (max-width: 480px) {
-	.desktop {
-		display: none;
-	}
-	.mobile {
-		display: block;
-	}
-}
-
-#map-dining, #map-shopping, #map-schools, #map-parks, #map-hospitals, #map-colleges{
-	width:100%;
-	height: 400px;
-}
-
-
-#map {
-	height: 50%;
-	weight: 50%;
-}
