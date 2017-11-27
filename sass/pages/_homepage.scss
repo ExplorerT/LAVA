@@ -20,7 +20,7 @@
     font-family: $font__rubik;
     height: auto;
     //background-image:  url("http://localhost:8888/LAVA/wp-content/themes/lava/images/headers/audi-nissen-114638.jpg");
-	
+
 
     h1 {
         //font-size: 6em;
@@ -48,11 +48,11 @@
     h2 {
         font-size: 3em;
         font-weight: 200;
-        color: #fff; 
+        color: #fff;
         //padding-bottom: 1em;
-        //padding-top: .7em; 
+        //padding-top: .7em;
         text-align: center;
-            
+
        }
 
      ul{
@@ -70,7 +70,7 @@
     			//text-decoration:none;
     			cursor:pointer;
    			}
-    	
+
 			li {
 				style: none;
 				margin: 30px;
@@ -99,30 +99,6 @@
 	}
 }
 
-    /*ul {
-        list-style-type: none;    
-        display: flex;
-  		//align-items: center;
-  		justify-content: center;
-
-
-        h5 {
-
-            font-size: 1.6em;
-            font-weight: 100;
-            color: #fff;
-                
-        }
-
-        img {
-            border-radius: 130px;
-            border: 2px solid #f15a29;
-            background-color: #eee;
-            width: 135px;
-		    height: auto;
-        }
-
-    }*/
 
 .section-2 {
     text-align: center;
@@ -147,7 +123,7 @@
   	color: #fff;
   	background-size: cover;
   	background: linear-gradient(
-      rgba(0,0,0,0.7), 
+      rgba(0,0,0,0.7),
       rgba(0,0,0,0.7)
     ),
     url('images/andrew-neel-308138.jpg');
@@ -169,9 +145,9 @@
 	    text-decoration: none !important;
 	    width: 280px;
 	    //height: 150px;
-		}	
+		}
 
-	@media only screen and (min-width: 48em) { 
+	@media only screen and (min-width: 48em) {
 		.button {
 			width: 280px;
 			padding: 11px 32px 13px;
@@ -237,7 +213,7 @@
     margin-top: -3em;
     padding: 35px 0 0 0;
     margin: 0 0 -23px 0;
-   
+
 	h3 {
 		font-size: 3.8em;
     	//font-weight: 200px;
@@ -280,7 +256,7 @@
 }
 
 /**---------------- Media query ----------------**/
-@media only screen and (min-width: 48em) { 
+@media only screen and (min-width: 48em) {
 	.column-half {
 		width: 50%;
 	}
@@ -323,7 +299,7 @@ span.wpcf7-not-valid-tip{
 	background: #ff0000;
 	padding: 5px;
 }
-div.wpcf7-validation-errors { 
+div.wpcf7-validation-errors {
 	text-shadow: none;
 	border: transparent;
 	background: #f9cd00;
@@ -344,34 +320,29 @@ div.wpcf7-mail-sent-ok{
 	margin: 0;
 }
 
-.sponsors {
-	height: auto;
-	text-align: center;
-  	color: #fff;
-  	background-size: cover;
-  	background: linear-gradient(
-      rgba(0,0,0,0.7), 
-      rgba(0,0,0,0.7)
-    ),
-    url('images/sponsors-bg.jpg');
-    background-size: cover;
-    padding-top: 10px;
-    font-size: 19px;
-    margin-bottom: -2.8em;
-    //font-family: $font_montserrat !important;
-	
-}
-
+  .sponsors {
+  	height: auto;
+  	text-align: center;
+    	color: #fff;
+    	background-size: cover;
+    	background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+      ),
+      url('images/sponsors-bg.jpg');
+      background-size: cover;
+      padding-top: 10px;
+      font-size: 19px;
+      margin-bottom: -2.8em;
+  }
 }
 
 .homepage {
 		.content {
 		width: auto;
 		font-family: $font__rubik;
-		//margin-left: -1.5em;
-	    //margin-right: em;
 
-		.entry-content, 
+		.entry-content,
 		.entry-summary {
 	    	margin: 1.5em 0 0;
 	    	width: 100%;
@@ -388,26 +359,5 @@ div.wpcf7-mail-sent-ok{
 
 		}
 
+  }
 }
-}
-
-/*.search-category {
-    text-align: center;
-    //padding: 150px;
-
- @media screen and (min-width: $query__medium) {
- 	padding: 150px;
- 	height: 100%;
- }
-
-	 #searchform input {
-	 	color: green;
-	 	font-size: 30px;
-	 	font-family: $font__rubik;
-	 	border-color: red;
-	 	height: 70px;
-	 	background-color: #eee;
-	 	//width: 7em;
-	 }
-
-}*/

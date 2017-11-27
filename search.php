@@ -12,8 +12,27 @@ get_header(); ?>
 <?php
 if ( have_posts() ) : ?>
 
+	<div class="search-result">
+		<div class="search-category">
+			<h2> Search Facility by Feature</h2>
+			<form id="searchform" method="get" action="<?php echo home_url(); ?>">
+				<input type="text" name="s" id="s" size="15" />
+				    <?php wp_dropdown_categories( 'show_option_none=Select' ); ?>
+					<button type="submit" id="search-submit" value="">
+			            <span class="search-btn">
+			                <i class="fa fa-search" aria-hidden="true"></i>Search
+	              		</span>
+	            	</button>
+			</form>
+		</div>
+
+	</div>
+
+
 	<header class="page-header">
-		<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'lava' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		
+		
+		<h1 class="page-title">Search Results for <?php echo(get_search_query());?><?php echo(getCatSearchFilter(' Facilities with ',''));?></h1>
 	</header><!-- .page-header -->
 
 <?php endif; ?>

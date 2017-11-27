@@ -1,45 +1,85 @@
 .search-category {
-    text-align: center;
-    //padding: 150px;
-    text-align: center;
     color: white;
     background-size: cover;
-    background-color: #27aae1;
-
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 80px 1em 100px 1em !important;
+    vertical-align: middle;
+    height: 100%;
         h2 {
-            padding: 60px 0;
             font-weight: 200;
-            text-align: center;
-            font-size: 80px;
+            text-align: left;
+            font-size: 30px !important;
+            font-family: $font__rubik;
+            //padding-bottom: 30px;
+
         }
 
          @media screen and (min-width: $query__medium) {
-            padding: 150px;
             height: 100%;
-         }
+            vertical-align: middle;
+
+            h2 {
+                font-size: 4em !important;
+                //padding-bottom: 50px;
+                text-align: center;
+                //margin-top: -10px;
+            }
+
+            #searchform {
+                display: flex;
+
+                select {
+                    width: 700px;
+                    height: 80px;
+                    color: green;
+                    background-color: white;
+                    text-transform: uppercase;
+                    //margin-bottom: 30px;
+
+                    #cat .postform {
+                        background-color: #f15a29;
+                    }
+                }
+
+                button, input {
+                    color: #fff;
+                    font-size: 1.2em !important;
+                    font-family: $font__rubik;
+                    border-color: #fff;
+                    height: 4.2em !important;
+                    width: 9em !important;
+                    //background-color: #f15a29;
+                    align-content: center;
+                    justify-content: center;
+                    text-align: center;
+                    float: none;
+                }
+            }
+        }
+
+
 
          button, input {
             color: #fff;
-            font-size: 1.5em;
+            font-size: 1em;
             font-family: $font__rubik;
-            border-color: #f15a29;
-            height: 3.3em;
-            //background-color: #eee;
+            border: 3px solid #fff;
+            height: 3em;
             width: 8em;
-            //border-radius: 0.4em;
-            background-color: #f15a29;
-            //display: flex;
-            align-content: center;
-            justify-content: center;
+            background-color: none !important;
             text-align: center;
+            border-radius: 8px;
+            text-transform: uppercase;
 
 
                 &:hover,
                 &:active,
                 &:focus {
-                    background-color: #000;
+                    background-color: #f15a29;
                     color: #fff;
-                    border-color: #000;
+                    border-color: #fff;
                 }
          }
 
@@ -47,23 +87,23 @@
 }
 
 
- select {
-    border: 5px solid #000;
-    width: 700px;
-    height: 80px;
+select {
+    border: none;
+    width: 350px;
+    height: 50px;
     color: green;
     background-color: white;
+    margin-bottom: 20px !important;
+    text-transform: uppercase;
 
-
-        
         #cat .postform {
             background-color: #f15a29;
         }
 }
 
 #searchform {
-    display: flex;
-    align-content: center;
+    //display: flex;
+    align-content: left;
     justify-content: center;
 }
 
@@ -80,7 +120,7 @@ button #search-submit {
     }
 .search-btn {
     display: flex;
-    padding: 6px 3px;
+    //padding: 6px 3px;
     font-size: 1em;
     //font-weight: bold;
     color: white;
@@ -91,5 +131,135 @@ button #search-submit {
         //font-size: 30px;
         padding-right: 15px;
     }
+
+}
+
+/**-----------Search Page contact form--------------**/
+.search-contact {
+
+    .search-contactform {
+            background-color: #f15a29;
+            color: #fff;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+    .search-que {
+        padding-top: 30px;
+        margin-bottom: -80px;
+        p {
+            font-size: 21px;
+            text-align: center;
+            height: 200px;
+            margin-bottom: em;
+            line-height: 50px;
+            font-weight: 200;
+        }
+
+        @media screen and (min-width: $query__medium){
+            p {
+            font-size: 35px;
+            text-transform: uppercase;
+            }
+        }
+    }
+/**-----------contact form--------------**/
+#responsive-form{
+    max-width:750px;
+    margin:0 auto;
+        width:100%;
+}
+
+.form-row{
+    width: 100%;
+}
+.column-half, .column-full{
+    float: left;
+    position: relative;
+    padding: 0.65rem;
+    width:100%;
+    font-size: 20px;
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/**---------------- Media query ----------------**/
+@media only screen and (min-width: 48em) {
+    .column-half {
+        width: 50%;
+    }
+}
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box
+}
+.wpcf7 input[type="text"]:focus{
+    background: #fff;
+}
+
+.wpcf7 textarea {
+    height: 200px;
+}
+
+.wpcf7-submit{
+    //float: left;
+    //background: #8dc63f;
+    background: #00bf8f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #001510, #00bf8f);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    height: 60px;
+    width: 140px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+}
+.wpcf7-submit:hover{
+    background: #27aae1;
+    color: #fff;
+}
+span.wpcf7-not-valid-tip{
+    text-shadow: none;
+    font-size: 12px;
+    color: #fff;
+    background: #ff0000;
+    padding: 5px;
+}
+div.wpcf7-validation-errors {
+    text-shadow: none;
+    border: transparent;
+    background: #f9cd00;
+    padding: 5px;
+    color: #9C6533;
+    text-align: center;
+    margin: 0;
+    font-size: 12px;
+}
+div.wpcf7-mail-sent-ok{
+    text-align: center;
+    text-shadow: none;
+    padding: 5px;
+    font-size: 12px;
+    background: #59a80f;
+    border-color: #59a80f;
+    color: #fff;
+    margin: 0;
+}
 
 }

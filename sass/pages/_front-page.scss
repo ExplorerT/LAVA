@@ -2,7 +2,7 @@
 	height: 950px;
 	width: 100%;
 	background: linear-gradient(
-      rgba(0,0,0,0.1), 
+      rgba(0,0,0,0.1),
       rgba(0,0,0,0.1)
     ),
 	url("http://localhost:8888/LAVA/wp-content/themes/lava/images/headers/haley-phelps-119782.jpg");
@@ -18,7 +18,7 @@
 		font-weight: 100;
 		text-align: center;
 		padding-top: 1em;
-			 
+
 			 span {
 			 	color: #f15a29;
 			 	text-transform: uppercase;
@@ -37,7 +37,7 @@
 		border-color: white;
 		text-transform: uppercase;
 		text-decoration: none;
-			
+
 			a {
 				text-decoration: none !important;
 				color: #ffffff;
@@ -54,11 +54,8 @@
 
 	}
 }
-	
 
 
-		 
-		
 	@media screen and (min-width: 1100px) {
 		.home-header {
 			margin-top: -4em;
@@ -78,7 +75,7 @@
 			float: left;
 			border: 2px solid #fff;
 			opacity: 0.9;
-					
+
 			img {
 				width: 50px;
 				height: 90px;
@@ -102,7 +99,7 @@
 
 			#intro {
 
-				font-size: 1.2em; 
+				font-size: 1.2em;
 				padding: 0 90px;
 				margin-top: -2em;
 				//text-align: center;
@@ -117,14 +114,14 @@
 				border-color: white;
 				text-transform: uppercase;
 				font-size: 1.2em;
-	
+
 			}
 
 		}
 
 	}
 @media screen and (max-width: 1101px){
-	
+
 	.welcome-msg {
 			color: #fff;
 			background-color: #f15a29;
@@ -137,7 +134,7 @@
 			float: left;
 			border: 2px solid #fff;
 			opacity: 0.9;
-			
+
 			img {
 				width: 50px;
 				height: 90px;
@@ -160,7 +157,7 @@
 
 			#intro {
 
-				font-size: 1.2em; 
+				font-size: 1.2em;
 				padding: 0 20px;
 				margin-top: -.5em;
 			}
@@ -173,7 +170,7 @@
 				border-color: white;
 				text-transform: uppercase;
 				font-size: 1.2em;
-	
+
 			}
 
 		}
@@ -198,8 +195,8 @@
 			border-radius: 50%;
 			float: left;
 			border: 2px solid #fff;
-			opacity: 0.9;			
-					
+			opacity: 0.9;
+
 			img {
 				width: 50px;
 				height: 90px;
@@ -223,7 +220,7 @@
 
 			#intro {
 
-				font-size: .9em; 
+				font-size: .9em;
 				padding: 0 20px;
 				margin-top: -.7em;
 			}
@@ -236,7 +233,7 @@
 				border-color: white;
 				text-transform: uppercase;
 				font-size: .8em;//use this
-	
+
 			}
 
 		}
@@ -251,7 +248,7 @@
 
 	.welcome-msg {
 			margin-top: 5em;
-			
+
 				span {
 					color: #fff;
 					text-transform: uppercase;
@@ -262,7 +259,7 @@
 
 			#intro {
 
-				font-size: .9em; 
+				font-size: .9em;
 				padding: 0 20px;
 				margin-top: -.7em;
 			}
@@ -274,8 +271,8 @@
 				height: 40px;
 				border-color: white;
 				text-transform: uppercase;
-				font-size: .8em; 
-	
+				font-size: .8em;
+
 			}
 		}
 }
@@ -293,7 +290,7 @@
 		margin-top: 0em;
 		height: 200px;
 		width: 200px;
-		border-radius: 100%; 
+		border-radius: 100%;
 
 			h1 {
 				color: #000;
@@ -312,7 +309,7 @@
 
 			#intro {
 
-				font-size: .6em;  
+				font-size: .6em;
 				padding: 0 20px;
 				margin-top: -.7em;
 			}
@@ -324,10 +321,10 @@
 				height: 25px;
 				border-color: white;
 				text-transform: uppercase;
-				font-size: .6em; 
+				font-size: .6em;
 			}
-	
-		
+
+
 	}
 
 }
@@ -413,12 +410,12 @@
     padding-top: 50px;
 
 
-    	h2 {
-    		padding-bottom: 40px;
-    		font-size: 3.7em;
-    		color: #ffffff;
-    		font-weight: 300;
-    	}
+    h2 {
+    	padding-bottom: 40px;
+    	font-size: 3.7em;
+    	color: #ffffff;
+    	font-weight: 300;
+    }
 }
 
 
@@ -431,6 +428,10 @@
     margin: 0 0 -22px 0;
     padding-top: 60px;
     padding-bottom: 40px;
+
+    br {
+		display: none !important;
+		}
 
     .button {
 
@@ -450,7 +451,7 @@
 		}
 
 		h3 {
-    		font-size: 2em;
+    		font-size: 2em !important;
     		font-weight: 300;
     	}
 
@@ -459,10 +460,11 @@
   			align-items: center;
   			margin-left: -2.2em;
     	}
-		
+
 		li {
 			style: none;
 			margin: 30px;
+
 
 		.section-icon {
 			border-radius: 150px;
@@ -481,20 +483,15 @@
 			line-height: 40px;
 			padding-top: 0.8em;
 		}
-	}	
+	}
 
 	@media screen and (min-width: $query__medium){
 		h3 {
-    		font-size: 3em;
-    		font-weight: 300;
-    		padding-right: 4.8em;
-    		padding-left: 4.8em;
+    		font-size: 3.2em !important;
     		padding-bottom: 50px;
     	}
 
     	p {
-			//padding-left: 6em;
-			//padding-right: 6em;
 			font-size: 1.5em !important;
 			text-align: center;
 		}
@@ -511,15 +508,19 @@
   			align-items: center;
   			justify-content: center;
     	}
+
+    	br {
+    		display: inline !important;
+    	}
 	}
-    	
+
 }
 
 .section-4-1 {
 	height: auto;
 	color: #fff;
 	text-align: center;
-   
+
 	h3 {
 		font-size: 3em;
 		font-weight: 300;
@@ -544,7 +545,7 @@
 
 		p {
 			//padding-right: 300px;
-    		//padding-left: 300px;			       
+    		//padding-left: 300px;
 		}
 
 	}
@@ -558,14 +559,18 @@
 			color: #8dc63f;
 			text-transform: uppercase;
 			font-size: xx-large;
-			line-height: 2.2;	
+			line-height: 2.2;
+
+			br {
+				display: none;
+			}
 		}
 
 		@media only screen and (min-width: $query__medium) {
 
-			p span:nth-of-type (5) {
-			    display: block;
-			    color: #f00;
+			br {
+			    display: inline !important;
+
 			}
 
 		}
@@ -599,7 +604,7 @@
 }
 
 /**---------------- Media query ----------------**/
-@media only screen and (min-width: 48em) { 
+@media only screen and (min-width: 48em) {
 	.column-half {
 		width: 50%;
 	}
@@ -647,7 +652,7 @@ span.wpcf7-not-valid-tip{
 	background: #ff0000;
 	padding: 5px;
 }
-div.wpcf7-validation-errors { 
+div.wpcf7-validation-errors {
 	text-shadow: none;
 	border: transparent;
 	background: #f9cd00;
@@ -674,7 +679,7 @@ div.wpcf7-mail-sent-ok{
 		//background-color: #8dc63f;
 		background-size: cover;
 	    background: linear-gradient(
-	      rgba(0,0,0,0.7), 
+	      rgba(0,0,0,0.7),
 	      rgba(0,0,0,0.7)
 	    ),
 	    url('images/andrew-neel-308138.jpg');
@@ -702,7 +707,7 @@ div.wpcf7-mail-sent-ok{
 				font-size: 22px;
 			}
 
-		
+
 
 			p {
 				font-size: 18px;
@@ -733,7 +738,7 @@ div.wpcf7-mail-sent-ok{
 			//padding: 30px;
 			border: 2px solid #fff;
 			text-decoration: none !important;
-			color: #fff;	
+			color: #fff;
 			//background-color: #fff;
 
 		}
@@ -744,13 +749,13 @@ div.wpcf7-mail-sent-ok{
 			width: 100%;
 			align-items: space-between;
   			justify-content: center;
-  			padding: 30px; 
+  			padding: 30px;
 
   			h3 {
   				padding-top: 30px;
   				font-size: 50px;
   			}
-  		
+
 
   			.site-contact{
   				//display: block;
@@ -773,11 +778,11 @@ div.wpcf7-mail-sent-ok{
     padding-top: 5px;
     font-size: 26px;
     background-color: #8dc63f;
-    border-top: 1px solid #f15a29; 
+    border-top: 1px solid #f15a29;
     border-bottom: 1px solid #f15a29;
     margin-left: -60px;
-    //background: #8dc63f;  // fallback for old browsers 
-	//background: -webkit-linear-gradient(to left, #A6FFCB 45%, #8dc63f);  //Chrome 10-25, Safari 5.1-6 
+    //background: #8dc63f;  // fallback for old browsers
+	//background: -webkit-linear-gradient(to left, #A6FFCB 45%, #8dc63f);  //Chrome 10-25, Safari 5.1-6
 	//background: linear-gradient(to left, #A6FFCB 45%, #8dc63f); //W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background: #FF512F;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #FF512F, #F09819);  /* Chrome 10-25, Safari 5.1-6 */
@@ -785,7 +790,7 @@ div.wpcf7-mail-sent-ok{
 
 
     h4 {
-    	font-weight: 500; 
+    	font-weight: 500;
     	font-style: italic;
     	padding-bottom: 10px;
     }
@@ -813,7 +818,7 @@ div.wpcf7-mail-sent-ok{
 			align-items: center;
   			justify-content: center;
 			li {
-				padding: 10px 40px 50px 40px; 
+				padding: 10px 40px 50px 40px;
 				img {
 					height: 50px;
 					width: 220px;
@@ -823,9 +828,5 @@ div.wpcf7-mail-sent-ok{
 			}
 		}
 	}
-	
+
 }
-
-
-
-

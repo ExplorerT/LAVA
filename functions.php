@@ -350,39 +350,6 @@ function search_by_cat()
     }
 }
 
-/**
- * Custom Header Support.
- */
-
-
-$args = array(
-	'width'         => 980,
-	'height'        => 60,
-	'default-image' => get_template_directory_uri() . '/images/header.jpg',
-	'uploads'       => true,
-);
-add_theme_support( 'custom-header', $args );
-
-/**
- * Register Custom Header Support.
- */
-register_default_headers( array(
-	'wheel' => array(
-		'url'           => '%s/images/headers/contact-us.jpg',
-		'thumbnail_url' => '%s/images/headers/sponsors-bg.jpg',
-		'description'   => __( 'Wheel', 'lava' )
-	),
-	'shore' => array(
-		'url'           => '%s/images/headers/sunset.jpg',
-		'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
-		'description'   => __( 'Shore', 'lava' )
-	),
-	'trolley' => array(
-		'url'           => '%s/images/headers/sunset.jpg',
-		'thumbnail_url' => '%s/images/headers/sunset-thumbnail.jpg',
-		'description'   => __( 'Trolley', 'lava' )
-	)
-) );
 
 /**
  * Register Font Awesome.
@@ -393,3 +360,37 @@ function enqueue_load_fa() {
   wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
 
 }
+
+
+/**
+ * Register Searched For in Category.
+ */
+
+function getCatSearchFilter($pre,$post){
+  $category = "";
+  $catId = htmlspecialchars($_GET["cat"]);
+
+  if ($catId != null && $catId != '' && $catId != '0'){
+    $category = $pre.get_cat_name($catId).$post;
+  }
+
+  return $category;
+
+}
+
+/**
+ * Register google map
+ */
+/*
+function add_wp_scripts() {
+		wp_register_script('googlemaps', 'https://maps.googleapis.com/maps/api/js?&key=AIzaSyDJZ_5uSYCJOzoIn0HfEZTrJqTWttaEBJA&callback', array(), '', true);
+		wp_register_script('script', get_template_directory_uri() . '/js/map.js', array('jquery'), '1.0.0', true);
+
+
+		wp_enqueue_script('googlemaps');
+		wp_enqueue_script('jquery');
+    wp_enqueue_script('script');
+}
+add_action( 'wp_enqueue_scripts', 'add_wp_scripts' );
+
+*/
