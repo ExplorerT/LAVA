@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Search Page-2
+Template Name: Search By Feature
 */
 ?>
 <?php
@@ -33,6 +33,17 @@ get_header(); ?>
               </span>
             </button>
 				</form>
+			</div>
+
+			<div class="search-contact">
+				<div class="search-que">
+					<p>Did you find what you are looking for?<br> If not use the form below to let us know</p>
+				</div>
+
+				<div class="search-contactform">
+					<div class="clearfix" id="responsive-form"><?php echo do_shortcode( '[contact-form-7 id="2048" title="Homepage Contact Form"]' ); ?>	
+					</div>
+				</div>
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
