@@ -99,30 +99,6 @@
 	}
 }
 
-    /*ul {
-        list-style-type: none;
-        display: flex;
-  		//align-items: center;
-  		justify-content: center;
-
-
-        h5 {
-
-            font-size: 1.6em;
-            font-weight: 100;
-            color: #fff;
-
-        }
-
-        img {
-            border-radius: 130px;
-            border: 2px solid #f15a29;
-            background-color: #eee;
-            width: 135px;
-		    height: auto;
-        }
-
-    }*/
 
 .section-2 {
     text-align: center;
@@ -344,32 +320,27 @@ div.wpcf7-mail-sent-ok{
 	margin: 0;
 }
 
-.sponsors {
-	height: auto;
-	text-align: center;
-  	color: #fff;
-  	background-size: cover;
-  	background: linear-gradient(
-      rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)
-    ),
-    url('images/sponsors-bg.jpg');
-    background-size: cover;
-    padding-top: 10px;
-    font-size: 19px;
-    margin-bottom: -2.8em;
-    //font-family: $font_montserrat !important;
-
-}
-
+  .sponsors {
+  	height: auto;
+  	text-align: center;
+    	color: #fff;
+    	background-size: cover;
+    	background: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+      ),
+      url('images/sponsors-bg.jpg');
+      background-size: cover;
+      padding-top: 10px;
+      font-size: 19px;
+      margin-bottom: -2.8em;
+  }
 }
 
 .homepage {
 		.content {
 		width: auto;
 		font-family: $font__rubik;
-		//margin-left: -1.5em;
-	    //margin-right: em;
 
 		.entry-content,
 		.entry-summary {
@@ -388,5 +359,5 @@ div.wpcf7-mail-sent-ok{
 
 		}
 
-}
+  }
 }
