@@ -15,24 +15,10 @@
 	background-color: #b30606;
 	width:100%;
 	margin:0 auto;
-    
-   
-    //height: 60px;
 
-/*.site-header {
-	position: fixed;
-	padding: 1em;
-	font-family: $font__rubik;
-	color: #fff;
-	background-color: #191d48;
-	//width: 960px;
-	//margin: 0px auto;
-	//z-index: 170;*/
-
-	
 	@media screen and (min-width: 48em) {
 		padding: 1em 2em;
-		position: fixed;
+		position: sticky;
 		top:0;
 	    left:0;
 	    right:0;
@@ -40,8 +26,6 @@
 	    margin:0 auto;
 	    width: 100%;
 	}
-
-
 }
 
 .site-branding {
@@ -73,12 +57,10 @@
 	line-height: 1em;
 	margin-top: 10px;
 
-
-	
 	a {
 		color: white;
 		text-decoration: none;
-		
+
 		&:hover,
 		&:focus {
 			text-decoration: underline;
@@ -99,19 +81,19 @@
 		justify-content: space-between;
 		height: 90px;
 	}
-	
+
 	.site-branding {
 		width: 35%;
 		flex: 1 0 auto;
 	}
-	
+
 	.site-navigation {
 		width: 55%;
 	}
 
-}    
+}
 
-/* 
+/*
 Header Menu
 */
 @import "header-menu";
