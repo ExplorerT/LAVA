@@ -2708,7 +2708,8 @@ button.dropdown-toggle {
 	background: inherit;
 	color: #333;
 	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
+	padding: .8em 1em .4em .5em;
+	font-size: small;
 }
 
 .menu-toggle {
