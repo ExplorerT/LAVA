@@ -1432,6 +1432,7 @@ button #search-submit {
 		float: left;
 		border: 2px solid #fff;
 		opacity: 0.9;
+		line-height: 1.2 !important;
 	}
 	.welcome-msg img {
 		width: 50px;
@@ -1454,6 +1455,7 @@ button #search-submit {
 		font-size: 1.2em;
 		padding: 0 90px;
 		margin-top: -2em;
+		line-height: 4 !important;
 	}
 	.welcome-msg button {
 		color: white;
@@ -1751,10 +1753,8 @@ button #search-submit {
 	display: inline-block;
 	text-decoration: none !important;
 	width: 280px;
-	background: #00bf8f;
+	background: #8dc63f;
 	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
 }
 
 .section-3-1 h3 {
@@ -1862,9 +1862,9 @@ button #search-submit {
 	font-size: 1.8em;
 	padding-top: 40px;
 	color: #8dc63f;
-	text-transform: uppercase;
-	font-size: xx-large;
-	line-height: 2.2;
+	font-size: 3em;
+	line-height: 1.5;
+	padding-top: 40px;
 }
 
 .section-4-1 .contact-form p br {
@@ -1926,13 +1926,11 @@ button #search-submit {
 
 .section-4-1 .contact-form .wpcf7-submit {
 	float: left;
-	background: #00bf8f;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
+	background: #8dc63f;
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
+	border-radius: 10px;
 	padding: 8px 20px;
 	cursor: pointer;
 	height: 60px;
@@ -2060,23 +2058,18 @@ button #search-submit {
 .sponsors {
 	height: auto;
 	text-align: center;
-	color: #fff;
+	color: #000;
 	padding-top: 5px;
 	font-size: 26px;
 	background-color: #8dc63f;
 	border-top: 1px solid #f15a29;
 	border-bottom: 1px solid #f15a29;
 	margin-left: -60px;
-	background: #FF512F;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FF512F, #F09819);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #eee;
 }
 
 .sponsors h4 {
 	font-weight: 500;
-	font-style: italic;
 	padding-bottom: 10px;
 }
 
@@ -2708,7 +2701,8 @@ button.dropdown-toggle {
 	background: inherit;
 	color: #333;
 	line-height: 1.5em;
-	padding: .4em 1em .4em .5em;
+	padding: .8em 1em .4em .5em;
+	font-size: small;
 }
 
 .menu-toggle {
