@@ -1930,6 +1930,7 @@ button #search-submit {
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
+	border-radius: 10px;
 	padding: 8px 20px;
 	cursor: pointer;
 	height: 60px;
