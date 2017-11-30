@@ -2064,11 +2064,7 @@ button #search-submit {
 	border-top: 1px solid #f15a29;
 	border-bottom: 1px solid #f15a29;
 	margin-left: -60px;
-	background: #FF512F;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #FF512F, #F09819);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #eee;
 }
 
 .sponsors h4 {
