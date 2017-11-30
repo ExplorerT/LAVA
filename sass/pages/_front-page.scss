@@ -1,4 +1,5 @@
-.home-header {
+
+	.home-header {
 	height: 950px;
 	width: 100%;
 	background: linear-gradient(
@@ -56,6 +57,9 @@
 }
 
 
+
+
+
 	@media screen and (min-width: 1100px) {
 		.home-header {
 			margin-top: -4em;
@@ -75,6 +79,7 @@
 			float: left;
 			border: 2px solid #fff;
 			opacity: 0.9;
+			line-height: 1.2 !important;
 
 			img {
 				width: 50px;
@@ -98,10 +103,10 @@
 			}
 
 			#intro {
-
 				font-size: 1.2em;
 				padding: 0 90px;
 				margin-top: -2em;
+				line-height: 4 !important;
 				//text-align: center;
 			}
 
@@ -410,12 +415,12 @@
     padding-top: 50px;
 
 
-    h2 {
-    	padding-bottom: 40px;
-    	font-size: 3.7em;
-    	color: #ffffff;
-    	font-weight: 300;
-    }
+    	h2 {
+    		padding-bottom: 40px;
+    		font-size: 3.7em;
+    		color: #ffffff;
+    		font-weight: 300;
+    	}
 }
 
 
@@ -431,7 +436,7 @@
 
     br {
 		display: none !important;
-		}
+	}
 
     .button {
 
@@ -445,9 +450,7 @@
 	    display: inline-block;
 	    text-decoration: none !important;
 	    width: 280px;
-	    background: #00bf8f;  /* fallback for old browsers */
-   		background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-    	background: linear-gradient(to right, #001510, #00bf8f);
+	    background: #8dc63f;  /* fallback for old browsers */
 		}
 
 		h3 {
@@ -557,9 +560,9 @@
 			font-size: 1.8em;
 			padding-top: 40px;
 			color: #8dc63f;
-			text-transform: uppercase;
-			font-size: xx-large;
-			line-height: 2.2;
+			font-size: 3em;
+			line-height: 1.5;
+			padding-top: 40px;
 
 			br {
 				display: none;
@@ -629,10 +632,7 @@
 
 .wpcf7-submit{
 	float: left;
-	//background: #8dc63f;
-	background: #00bf8f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #001510, #00bf8f);
+	background: #8dc63f;
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
