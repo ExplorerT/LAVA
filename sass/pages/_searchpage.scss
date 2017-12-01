@@ -1,9 +1,7 @@
 .search-category {
     color: white;
     background-size: cover;
-    background: #00bf8f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8dc63f;
     padding: 80px 1em 100px 1em !important;
     vertical-align: middle;
     height: 100%;
@@ -12,8 +10,6 @@
             text-align: left;
             font-size: 30px !important;
             font-family: $font__rubik;
-            //padding-bottom: 30px;
-
         }
 
          @media screen and (min-width: $query__medium) {
@@ -217,9 +213,7 @@ button #search-submit {
 .wpcf7-submit{
     //float: left;
     //background: #8dc63f;
-    background: #00bf8f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #001510, #00bf8f);
+    background: #8dc63f; 
     color: #fff;
     text-transform: uppercase;
     border: none;
