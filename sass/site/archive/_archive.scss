@@ -1,6 +1,6 @@
 .archive-view {
 	background-color: #eee;
-	
+
 	.page-header {
 	    font-family: "Rubik", Georgia, Cambria, sans-serif;
 	    font-size: .4em !important;
@@ -12,17 +12,17 @@
 		//background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	    color: #000;
 	}
-	
+
 	.post,
 	.page {
 		position: relative;
 		background: white;
 	}
-	
+
 	.post__content {
 		padding: 2em 2em 3em;
 	}
-	
+
 	article {
 		border-bottom: .5px solid #000;
 		border-top: .5px solid #000;
@@ -35,7 +35,7 @@
 				justify-content: space-between;
 				flex-wrap: wrap;
 			}
-			
+
 			.page-header {
 				width: 100%;
 				flex: 1 0 100%;
@@ -44,11 +44,11 @@
 			.content-area {
 				width: $size__ratio-large;
 			}
-			
+
 			.widget-area {
 				width: $size__ratio-small;
 			}
-			
+
 		}
 	}
 
@@ -65,9 +65,9 @@
 	    	font-size: .4em !important;
 	    	padding-top: 40px;
 	    	padding-left: 1em;
-	    	height: 120px;	    	
+	    	height: 120px;
 		}
-	}	
+	}
 }
 
 .page-header {
@@ -89,26 +89,20 @@
 .search-result {
 	height: 380px;
 	background-color: #27aae1;
-	//padding-top: 10px;
-	background: #00bf8f;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #8dc63f;
 
 	.search-category{
 		padding: 10px;
-		//background-color: #27aae1 !important;
 		vertical-align: left;
-		background: #00bf8f;  /* fallback for old browsers */
-		background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-		background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: #8dc63f;
 
-		h2 {		
+		h2 {
             font-weight: 100;
             text-align: left;
             font-size: 30px;
             color: #fff;
-            font-style: italic;
             padding-bottom: -2em !important;
+
         }
 
         select {
@@ -118,14 +112,14 @@
 		    color: green;
 		    background-color: white;
 
-		        
+
 		    #cat .postform {
 		     	background-color: #f15a29;
 		    }
         }
 
         #searchform {
-		    align-content: left; 
+		    align-content: left;
 		    justify-content: left;
 
 		     button, input {
@@ -143,7 +137,7 @@
 /* For content-none.php */
 .search,
 .error-404 {
-	
+
 	.page-content {
 		margin-bottom: 2em;
 		padding: 1em 2em;
@@ -151,14 +145,14 @@
 		color: white;
 		background: $color__interactive;
 	}
-	
+
 	input[type="search"] {
 		padding: .5em;
 	}
 	input[type="submit"] {
 		border-color: white;
 		color: white;
-		
+
 		&:focus,
 		&:hover {
 			color: black;
@@ -185,7 +179,7 @@
 		display: block;
 		margin: 0 auto;
 	}
-	
+
 	a {
 		&:focus > img,
 		&:hover > img {
@@ -199,20 +193,20 @@
 	right: 0;
 	bottom: 0;
 	font-family: $font__rubik;
-	
+
 	a {
 		display: block;
 		padding: .5em 1em;
 		font-size: 90%;
 		text-decoration: none;
-		background: #00bf8f;
 		color: #fff;
-		
+		background: #8dc63f;
+
 		&:focus,
 		&:hover {
 			color: white;
 			background: $color__interactive;
 		}
 	}
-	
+
 }
