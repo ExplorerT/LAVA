@@ -317,6 +317,7 @@ h6 {
 p {
 	margin-top: .5em;
 	margin-bottom: 1em;
+	font-size: 20px;
 }
 
 dfn, cite, em, i {
@@ -1107,11 +1108,7 @@ a:hover, a:active {
 .search-category {
 	color: white;
 	background-size: cover;
-	background: #00bf8f;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #8dc63f;
 	padding: 80px 1em 100px 1em !important;
 	vertical-align: middle;
 	height: 100%;
@@ -1313,10 +1310,7 @@ button #search-submit {
 }
 
 .search-contact .wpcf7-submit {
-	background: #00bf8f;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
+	background: #8dc63f;
 	color: #fff;
 	text-transform: uppercase;
 	border: none;
@@ -2062,8 +2056,8 @@ button #search-submit {
 	padding-top: 5px;
 	font-size: 26px;
 	background-color: #8dc63f;
-	border-top: 1px solid #f15a29;
-	border-bottom: 1px solid #f15a29;
+	border-top: 10px solid #f15a29;
+	border-bottom: 10px solid #f15a29;
 	margin-left: -60px;
 	background: #eee;
 }
@@ -2381,21 +2375,13 @@ button #search-submit {
 .search-result {
 	height: 380px;
 	background-color: #27aae1;
-	background: #00bf8f;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #8dc63f;
 }
 
 .search-result .search-category {
 	padding: 10px;
 	vertical-align: left;
-	background: #00bf8f;
-	/* fallback for old browsers */
-	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #001510, #00bf8f);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #8dc63f;
 }
 
 .search-result .search-category h2 {
@@ -2403,7 +2389,6 @@ button #search-submit {
 	text-align: left;
 	font-size: 30px;
 	color: #fff;
-	font-style: italic;
 	padding-bottom: -2em !important;
 }
 
@@ -2498,8 +2483,8 @@ button #search-submit {
 	padding: .5em 1em;
 	font-size: 90%;
 	text-decoration: none;
-	background: #00bf8f;
 	color: #fff;
+	background: #8dc63f;
 }
 
 .continue-reading a:focus, .continue-reading a:hover {
@@ -2660,6 +2645,7 @@ Header Menu
 
 .main-navigation ul ul a {
 	width: 200px;
+	background: #fff;
 }
 
 .main-navigation ul li:hover > ul,
@@ -2754,7 +2740,7 @@ button.dropdown-toggle {
 	}
 	.main-navigation ul ul li a {
 		width: 218px;
-		background: none;
+		background: #fff;
 	}
 	.main-navigation ul li a {
 		padding: .4em 1em;
@@ -2816,6 +2802,7 @@ button.dropdown-toggle {
 .entry-title a {
 	text-decoration: none;
 	color: black;
+	font-size: 40px;
 }
 
 .entry-title a:focus, .entry-title a:hover {
